@@ -1,5 +1,6 @@
 # Load the required packages for the Chapter 3 exercises
 library(tidyverse)
+library(hexbin)
 
 # Load the MPG dataset from the ggplot2 package
 mpg <- mpg
@@ -25,6 +26,6 @@ library(nycflights13)
 flights <- flights
 
 # Filtered flights dataset
-filtered_flights <- flights %>%
+jan1 <- flights %>%
   filter(month == 1, day == 1)
 
